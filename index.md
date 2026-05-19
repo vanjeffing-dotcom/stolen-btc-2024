@@ -25,6 +25,14 @@ permalink: /
 - 🇰🇷 **[사건 증거 — 익명처리본 (한국어)](EVIDENCE_KO.md)**
 - 🇺🇸 **[Evidence — Anonymized (English)](EVIDENCE_EN.md)**
 
+## 👮 Official Korean Police Investigation Notice
+
+- 🇰🇷 **[경찰 수사결과 통지서 (한국어)](POLICE_CASE_KO.md)** — 경기도남부경찰청 사건번호 **2025-003861**
+- 🇺🇸 **[Korean Police Investigation Result (English)](POLICE_CASE_EN.md)** — Gyeonggi Nambu PPA case **2025-003861**
+- 📄 **[Redacted PDF](evidence/police_2025-003861_redacted.pdf)** — official document, personal info masked
+
+The Korean police have **officially confirmed** that 6.318566 BTC was stolen on 2024-11-05 via theft of the victim's BIP-39 mnemonic (charge: computer-related fraud, Korean Criminal Code Art. 347-2). The investigation conducted wallet tracing, e-mail-log analysis, and international cooperative investigation; it is currently **suspended pending suspect identification** — meaning the case automatically reopens the moment the suspect is identified via KYC, IP attribution, or similar.
+
 ## 🔐 Proof of Ownership
 
 - **[Signed Message](signed_message.txt)** — cryptographic proof that the author controls the victim address. Verifiable in Electrum, Bitcoin Core, [mempool.space verify tool](https://mempool.space/tools/verify), and any wallet supporting Bitcoin Signed Message on bech32 addresses.
