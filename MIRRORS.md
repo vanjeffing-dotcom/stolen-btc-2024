@@ -28,17 +28,39 @@
 
 ## 2. IPFS
 
-| CID | 핀닝 서비스 | 상태 |
-|-----|-------------|------|
-| `<TBD>` | Pinata | 🔒 Phase 4 진행 시 채워짐 |
-| `<TBD>` | web3.storage | 🔒 Phase 4 진행 시 채워짐 |
-| `<TBD>` | 본인 운영 IPFS 노드 | 🔒 (선택) |
+### 디렉토리 CID (사이트 전체)
 
-게이트웨이 (CID 발급 후 접근 경로):
-- `https://ipfs.io/ipfs/<CID>`
-- `https://cloudflare-ipfs.com/ipfs/<CID>`
-- `https://dweb.link/ipfs/<CID>`
-- `https://gateway.pinata.cloud/ipfs/<CID>`
+```
+QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f
+```
+
+게이트웨이 접근:
+- <https://ipfs.io/ipfs/QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f>
+- <https://cloudflare-ipfs.com/ipfs/QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f>
+- <https://dweb.link/ipfs/QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f>
+- <https://gateway.pinata.cloud/ipfs/QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f>
+
+### 개별 파일 CID (인라인 검증용)
+
+| 파일 | CID |
+|------|-----|
+| STATEMENT_KO.md | `QmYeRRwXA1eqyi4U2BneVhrtdvZyK2QbzuhBoc5NmW3XVj` |
+| STATEMENT_EN.md | `QmYUkuZKWihxcBVe4KMDZhtXHV1TZQ7W4bjWoQ5xQ5njr3` |
+| EVIDENCE_KO.md | `QmVB2z5yeNHtg3mxD8GXxUhnj2YPQfobxM9ZYSsXLUtbxR` |
+| EVIDENCE_EN.md | `QmTrv7oA725XPGXic3JyvTCzPrviTKRWpkAq2ds5aiaQM1` |
+| signed_message.txt | `QmdZq81PXS9GozkLK3cAPjEpEBc7kSxVpCzysLAiqfQ31r` |
+
+콘텐츠는 결정적: 누가 같은 파일을 다시 핀하더라도 위와 동일한 CID 가 나옵니다. CID = "이 콘텐츠가 변조되지 않았다" 의 영구 증명.
+
+### 핀닝 상태
+
+| 핀닝 노드 | 상태 | 비고 |
+|-----------|------|------|
+| 본인 운영 노드 (gram-jsong, Linux) | ✅ Pinned (Phase 4) | 노드 가용성에 의존 |
+| Pinata | 🔒 미설정 | 사용자 가입 후 진행 예정 (van.jeffing@gmail.com) |
+| web3.storage | 🔒 미설정 | 사용자 가입 후 진행 예정 |
+
+영구성 강화를 위해 최소 2개 이상의 핀닝 서비스에 등록 권장.
 
 ## 3. 비트코인 온체인 (OP_RETURN 마커)
 
