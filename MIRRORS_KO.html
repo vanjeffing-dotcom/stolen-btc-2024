@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MIRRORS_KO — Stolen BTC 2024-11-05</title>
+<meta name="description" content="Public statement of 6.318566 BTC stolen on 2024-11-05, cryptographically signed by the rightful owner.">
+<style>
+:root {
+  --fg: #1a1a1a;
+  --fg-mute: #555;
+  --bg: #fafafa;
+  --bg-card: #ffffff;
+  --accent: #0366d6;
+  --border: #e1e4e8;
+  --code-bg: #f6f8fa;
+  --warn-bg: #fffbea;
+  --warn-border: #f0c36d;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  max-width: 900px; margin: 0 auto; padding: 24px;
+  line-height: 1.65; color: var(--fg); background: var(--bg);
+}
+.nav {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 16px; margin-bottom: 32px; font-size: 0.92em;
+  position: sticky; top: 12px; z-index: 10;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.nav a { margin-right: 14px; color: var(--accent); text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+.nav .sep { color: var(--border); margin: 0 4px; }
+.nav .lang { float: right; font-size: 0.9em; color: var(--fg-mute); }
+.nav .lang a { color: var(--fg-mute); }
+
+h1, h2, h3, h4 { color: #111; line-height: 1.3; }
+h1 { border-bottom: 2px solid #333; padding-bottom: 0.3em; margin-top: 0.5em; }
+h2 { border-bottom: 1px solid var(--border); padding-bottom: 0.2em; margin-top: 2em; }
+h3 { margin-top: 1.5em; }
+
+p, ul, ol { margin: 0.8em 0; }
+ul, ol { padding-left: 1.5em; }
+li { margin: 0.3em 0; }
+
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.95em; }
+th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; vertical-align: top; }
+th { background: #f0f3f6; font-weight: 600; }
+tr:nth-child(even) td { background: #fcfcfc; }
+
+code { background: var(--code-bg); padding: 2px 6px; border-radius: 3px; font-family: "SF Mono", Monaco, Consolas, monospace; font-size: 0.88em; color: #333; }
+pre { background: #2d2d2d; color: #e8e8e8; padding: 16px; border-radius: 6px; overflow-x: auto; line-height: 1.4; }
+pre code { background: transparent; color: inherit; padding: 0; font-size: 0.88em; }
+
+a { color: var(--accent); }
+a:hover { text-decoration: underline; }
+
+blockquote {
+  border-left: 4px solid var(--warn-border); margin: 1.2em 0; padding: 0.8em 1.2em;
+  color: var(--fg); background: var(--warn-bg); border-radius: 0 4px 4px 0;
+}
+blockquote p:first-child { margin-top: 0; }
+blockquote p:last-child { margin-bottom: 0; }
+
+hr { border: none; border-top: 1px solid var(--border); margin: 2.5em 0; }
+
+.footer {
+  margin-top: 4em; padding-top: 1em; border-top: 1px solid var(--border);
+  color: var(--fg-mute); font-size: 0.85em; text-align: center;
+}
+.footer a { color: var(--fg-mute); }
+
+.seal-banner {
+  background: #e6f4ea; border: 1px solid #34a853; color: #137333;
+  padding: 8px 12px; border-radius: 4px; font-size: 0.88em; margin: 0.5em 0 1.5em;
+}
+.seal-banner code { background: rgba(0,0,0,0.06); }
+</style>
+</head>
+<body>
+<nav class="nav">
+<a href="index.html">🏠 홈</a><span class="sep">·</span>
+<a href="STATEMENT_KO.html">🇰🇷 성명서</a>
+<a href="EVIDENCE_KO.html">증거</a>
+<a href="MIRRORS_KO.html">미러</a><span class="sep">·</span>
+<a href="signed_message.txt">🔐 서명 (raw)</a>
+<a href="https://mempool.space/tx/e867f6973fa3fc35487ca38bc9fbf0912bde4612d17d6a444d525aaf8dc173d4" target="_blank">⛓️ 절도 TX</a>
+<span class="lang"><a href="STATEMENT_EN.html">EN ↗</a></span>
+</nav>
+
+<h1>Mirrors and Live References</h1>
+<blockquote>
+<p><strong>무결성 모델 (Integrity Model)</strong></p>
+<p>본 파일(<code>MIRRORS.md</code>)은 <strong>서명 대상이 아닙니다</strong>. 시간에 따라 변경됩니다.</p>
+<p>암호학적으로 서명·고정된 4개 문서는 다음과 같이 SHA-256 으로 봉인되어 있으며, 그 봉인이 <a href="signed_message.txt"><code>signed_message.txt</code></a> 에 박혀 있습니다:</p>
+<table>
+<thead>
+<tr>
+<th>파일</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STATEMENT_KO.md</td>
+<td><code>d6c73c8dc51b5e0b6aa076d15a2fc9b4b9d19c3aaac0ba8ba7b3719272c27f93</code></td>
+</tr>
+<tr>
+<td>STATEMENT_EN.md</td>
+<td><code>7948e26829024685245479a94c18bdc5760eccbdd34daf7f1d0ade1e6bdd09e4</code></td>
+</tr>
+<tr>
+<td>EVIDENCE_KO.md</td>
+<td><code>741390f29fdc6a847382e8762f717a7111fb2eb3b5e753af000c56b37c9039a0</code></td>
+</tr>
+<tr>
+<td>EVIDENCE_EN.md</td>
+<td><code>77681db33a7ceb8b33020b1ed913bdba48cec075345bf800ec98e5285c99b5ca</code></td>
+</tr>
+</tbody>
+</table>
+<p>본 파일은 미러·CID·TXID 같은 동적 정보만 다루므로, 자유롭게 업데이트해도 서명 무결성에는 영향이 없습니다.</p>
+<p>누구든 위 4개 파일을 <code>sha256sum</code> 으로 다시 계산하여 봉인 해시와 대조함으로써 변조 여부를 즉시 확인 가능합니다.</p>
+</blockquote>
+<hr>
+<h2>1. Web 미러</h2>
+<table>
+<thead>
+<tr>
+<th>채널</th>
+<th>URL</th>
+<th>상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub Pages</td>
+<td><a href="https://vanjeffing-dotcom.github.io/stolen-btc-2024">https://vanjeffing-dotcom.github.io/stolen-btc-2024</a></td>
+<td>🔒 Phase 8 완료 후 public 전환 예정</td>
+</tr>
+<tr>
+<td>(커스텀 도메인)</td>
+<td>(TBD)</td>
+<td>미정</td>
+</tr>
+</tbody>
+</table>
+<h2>2. IPFS</h2>
+<blockquote>
+<p><strong>CID 가 두 개인 이유</strong>: 같은 콘텐츠라도 IPFS 노드의 chunking·wrap 옵션에 따라 디렉토리 CID 가 달라집니다. 두 CID 모두 동일 콘텐츠를 가리키며, 봉인 파일의 SHA-256 무결성은 어느 쪽에서 fetch 해도 일치함이 검증되었습니다 (Phase 4 작업 시 확인).</p>
+</blockquote>
+<h3>Primary — Pinata 핀</h3>
+<pre><code>QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN
+</code></pre>
+<p><strong>브라우저 접근 (디렉토리 인덱스 — HTML 렌더링 가능한 게이트웨이)</strong>:<br>
+- <a href="https://ipfs.io/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/">https://ipfs.io/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/</a>  ← 권장 (Protocol Labs 운영)<br>
+- <a href="https://dweb.link/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/">https://dweb.link/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/</a><br>
+- <a href="https://4everland.io/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/">https://4everland.io/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/</a></p>
+<p><strong>개별 파일 직접 링크 (Pinata 가 가장 빠름)</strong>:<br>
+- <a href="https://gateway.pinata.cloud/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/STATEMENT_KO.html">https://gateway.pinata.cloud/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/STATEMENT_KO.md</a><br>
+- <a href="https://gateway.pinata.cloud/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/STATEMENT_EN.html">https://gateway.pinata.cloud/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/STATEMENT_EN.md</a><br>
+- <a href="https://gateway.pinata.cloud/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/EVIDENCE_KO.html">https://gateway.pinata.cloud/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/EVIDENCE_KO.md</a><br>
+- <a href="https://gateway.pinata.cloud/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/EVIDENCE_EN.html">https://gateway.pinata.cloud/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/EVIDENCE_EN.md</a><br>
+- <a href="https://gateway.pinata.cloud/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/signed_message.txt">https://gateway.pinata.cloud/ipfs/QmcERhYD61tHnsZpyFbPzdc5471pJjVGU2ixrEmfbWmKnN/signed_message.txt</a></p>
+<blockquote>
+<p>Pinata 의 공용 게이트웨이는 보안상 HTML 디렉토리 인덱스 페이지를 차단합니다 (ERR_ID:00023). 디렉토리 탐색은 <code>ipfs.io</code> 또는 <code>dweb.link</code> 사용. 개별 파일 fetch 는 모든 게이트웨이 정상.</p>
+</blockquote>
+<h3>Secondary — 본인 운영 노드 (gram-jsong)</h3>
+<pre><code>QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f
+</code></pre>
+<p>이 CID 의 개별 파일 CID (인라인 검증용):</p>
+<table>
+<thead>
+<tr>
+<th>파일</th>
+<th>CID (CIDv0, default chunking)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STATEMENT_KO.md</td>
+<td><code>QmYeRRwXA1eqyi4U2BneVhrtdvZyK2QbzuhBoc5NmW3XVj</code></td>
+</tr>
+<tr>
+<td>STATEMENT_EN.md</td>
+<td><code>QmYUkuZKWihxcBVe4KMDZhtXHV1TZQ7W4bjWoQ5xQ5njr3</code></td>
+</tr>
+<tr>
+<td>EVIDENCE_KO.md</td>
+<td><code>QmVB2z5yeNHtg3mxD8GXxUhnj2YPQfobxM9ZYSsXLUtbxR</code></td>
+</tr>
+<tr>
+<td>EVIDENCE_EN.md</td>
+<td><code>QmTrv7oA725XPGXic3JyvTCzPrviTKRWpkAq2ds5aiaQM1</code></td>
+</tr>
+<tr>
+<td>signed_message.txt</td>
+<td><code>QmdZq81PXS9GozkLK3cAPjEpEBc7kSxVpCzysLAiqfQ31r</code></td>
+</tr>
+</tbody>
+</table>
+<h3>핀닝 상태</h3>
+<table>
+<thead>
+<tr>
+<th>노드</th>
+<th>CID (디렉토리)</th>
+<th>상태</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pinata (가입자 <code>van.jeffing@gmail.com</code>)</td>
+<td><code>QmV852pj5D…AV2f</code></td>
+<td>✅ Pinned 2026-05-19</td>
+<td>Free plan, 1 GB 한도, 본 콘텐츠 ~58 KB</td>
+</tr>
+<tr>
+<td>본인 운영 노드 (gram-jsong, Linux)</td>
+<td><code>QmXgQfGEvD…AV2f</code></td>
+<td>✅ Pinned 2026-05-19</td>
+<td>노드 가용성에 의존</td>
+</tr>
+<tr>
+<td>web3.storage</td>
+<td>—</td>
+<td>🔒 미설정</td>
+<td>영구성 강화 위해 추가 권장</td>
+</tr>
+</tbody>
+</table>
+<p>봉인 파일의 SHA-256 무결성은 어느 CID·게이트웨이로 접근하든 항상 <a href="signed_message.txt"><code>signed_message.txt</code></a> 의 봉인 해시와 일치해야 함. 일치하지 않으면 그 게이트웨이의 콘텐츠는 변조된 것.</p>
+<h2>3. 비트코인 온체인 (OP_RETURN 마커)</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>마커 TXID</td>
+<td><code>&lt;TBD: Phase 8 OP_RETURN 발행 후 기재&gt;</code></td>
+</tr>
+<tr>
+<td>블록 높이</td>
+<td><code>&lt;TBD&gt;</code></td>
+</tr>
+<tr>
+<td>페이로드</td>
+<td><code>STOLEN-BTC TXID:e867f6973fa3 SEE:vanjeffing-dotcom.github.io/stolen-btc-2024</code></td>
+</tr>
+<tr>
+<td>송신 주소 (별도 보유 BTC 지갑)</td>
+<td><code>&lt;TBD&gt;</code></td>
+</tr>
+<tr>
+<td>수신 주소 (가해자, dust)</td>
+<td><code>1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN</code></td>
+</tr>
+<tr>
+<td>발행 일시</td>
+<td><code>&lt;TBD&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>확인 채널 (발행 후):<br>
+- <code>https://mempool.space/tx/&lt;marker TXID&gt;</code><br>
+- <code>https://blockchair.com/bitcoin/transaction/&lt;marker TXID&gt;</code><br>
+- <code>https://blockstream.info/tx/&lt;marker TXID&gt;</code></p>
+<h2>4. 절도 사건 트랜잭션 (고정값, 참고)</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>절도 TXID</td>
+<td><code>e867f6973fa3fc35487ca38bc9fbf0912bde4612d17d6a444d525aaf8dc173d4</code></td>
+</tr>
+<tr>
+<td>블록 타임 (UTC)</td>
+<td>2024-11-05 02:07:09</td>
+</tr>
+<tr>
+<td>피해자 주소</td>
+<td><code>bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d</code></td>
+</tr>
+<tr>
+<td>가해자 주소</td>
+<td><code>1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN</code></td>
+</tr>
+<tr>
+<td>이체 금액</td>
+<td>6.318566 BTC</td>
+</tr>
+</tbody>
+</table>
+<h2>5. 신고 접수 번호 (있는 경우)</h2>
+<table>
+<thead>
+<tr>
+<th>기관</th>
+<th>접수번호</th>
+<th>일자</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ECRM (한국 사이버범죄)</td>
+<td><code>&lt;TBD&gt;</code></td>
+<td><code>&lt;TBD&gt;</code></td>
+</tr>
+<tr>
+<td>Chainabuse</td>
+<td><code>&lt;TBD&gt;</code></td>
+<td><code>&lt;TBD&gt;</code></td>
+</tr>
+<tr>
+<td>TRM Labs</td>
+<td><code>&lt;TBD&gt;</code></td>
+<td><code>&lt;TBD&gt;</code></td>
+</tr>
+<tr>
+<td>Chainalysis</td>
+<td><code>&lt;TBD&gt;</code></td>
+<td><code>&lt;TBD&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>상세 진행은 <a href="../reports/submission_log.html"><code>reports/submission_log.md</code></a> 참조 (해당 파일도 비-서명 대상).</p>
+<h2>6. 마지막 업데이트</h2>
+<ul>
+<li><strong>2026-05-19</strong>: 초기 생성. 서명 직후 시점.</li>
+<li>(이후 업데이트는 위의 ISO date 와 함께 변경 사항만 한 줄로 추가)</li>
+</ul>
+<hr>
+<h2>변경 검증 방법</h2>
+<p>본 파일이 변조되었거나 의심스러우면, 위 표의 4개 파일을 <code>sha256sum</code> 으로 계산하여 <a href="signed_message.txt"><code>signed_message.txt</code></a> 의 봉인 해시와 비교하세요. 4개 봉인 해시가 일치하면 본 사건의 핵심 사실(피해자 주소, 가해자 주소, 절도 TXID, 금액, 시점)은 변조되지 않았음이 보장됩니다.</p>
+<pre><code class="language-bash">cd &lt;이 디렉토리&gt;
+sha256sum STATEMENT_KO.md STATEMENT_EN.md EVIDENCE_KO.md EVIDENCE_EN.md
+</code></pre>
+<div class="footer">
+이 페이지는 sealed .md 파일을 시각화한 보조 뷰입니다. 무결성 검증의 절대 기준은 sealed .md 파일 자체와 <a href="signed_message.txt">signed_message.txt</a> 입니다.<br>
+This page is an auxiliary HTML rendering of the sealed .md files. The ground truth for integrity verification is the sealed .md content and <a href="signed_message.txt">signed_message.txt</a>.<br><br>
+CC0 1.0 Public Domain.
+</div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SETUP — Stolen BTC 2024-11-05</title>
+<meta name="description" content="Public statement of 6.318566 BTC stolen on 2024-11-05, cryptographically signed by the rightful owner.">
+<style>
+:root {
+  --fg: #1a1a1a;
+  --fg-mute: #555;
+  --bg: #fafafa;
+  --bg-card: #ffffff;
+  --accent: #0366d6;
+  --border: #e1e4e8;
+  --code-bg: #f6f8fa;
+  --warn-bg: #fffbea;
+  --warn-border: #f0c36d;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  max-width: 900px; margin: 0 auto; padding: 24px;
+  line-height: 1.65; color: var(--fg); background: var(--bg);
+}
+.nav {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 16px; margin-bottom: 32px; font-size: 0.92em;
+  position: sticky; top: 12px; z-index: 10;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.nav a { margin-right: 14px; color: var(--accent); text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+.nav .sep { color: var(--border); margin: 0 4px; }
+.nav .lang { float: right; font-size: 0.9em; color: var(--fg-mute); }
+.nav .lang a { color: var(--fg-mute); }
+
+h1, h2, h3, h4 { color: #111; line-height: 1.3; }
+h1 { border-bottom: 2px solid #333; padding-bottom: 0.3em; margin-top: 0.5em; }
+h2 { border-bottom: 1px solid var(--border); padding-bottom: 0.2em; margin-top: 2em; }
+h3 { margin-top: 1.5em; }
+
+p, ul, ol { margin: 0.8em 0; }
+ul, ol { padding-left: 1.5em; }
+li { margin: 0.3em 0; }
+
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.95em; }
+th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; vertical-align: top; }
+th { background: #f0f3f6; font-weight: 600; }
+tr:nth-child(even) td { background: #fcfcfc; }
+
+code { background: var(--code-bg); padding: 2px 6px; border-radius: 3px; font-family: "SF Mono", Monaco, Consolas, monospace; font-size: 0.88em; color: #333; }
+pre { background: #2d2d2d; color: #e8e8e8; padding: 16px; border-radius: 6px; overflow-x: auto; line-height: 1.4; }
+pre code { background: transparent; color: inherit; padding: 0; font-size: 0.88em; }
+
+a { color: var(--accent); }
+a:hover { text-decoration: underline; }
+
+blockquote {
+  border-left: 4px solid var(--warn-border); margin: 1.2em 0; padding: 0.8em 1.2em;
+  color: var(--fg); background: var(--warn-bg); border-radius: 0 4px 4px 0;
+}
+blockquote p:first-child { margin-top: 0; }
+blockquote p:last-child { margin-bottom: 0; }
+
+hr { border: none; border-top: 1px solid var(--border); margin: 2.5em 0; }
+
+.footer {
+  margin-top: 4em; padding-top: 1em; border-top: 1px solid var(--border);
+  color: var(--fg-mute); font-size: 0.85em; text-align: center;
+}
+.footer a { color: var(--fg-mute); }
+
+.seal-banner {
+  background: #e6f4ea; border: 1px solid #34a853; color: #137333;
+  padding: 8px 12px; border-radius: 4px; font-size: 0.88em; margin: 0.5em 0 1.5em;
+}
+.seal-banner code { background: rgba(0,0,0,0.06); }
+</style>
+</head>
+<body>
+<nav class="nav">
+<a href="index.html">🏠 홈</a><span class="sep">·</span>
+<a href="STATEMENT_KO.html">🇰🇷 성명서</a>
+<a href="EVIDENCE_KO.html">증거</a>
+<a href="MIRRORS_KO.html">미러</a><span class="sep">·</span>
+<a href="signed_message.txt">🔐 서명 (raw)</a>
+<a href="https://mempool.space/tx/e867f6973fa3fc35487ca38bc9fbf0912bde4612d17d6a444d525aaf8dc173d4" target="_blank">⛓️ 절도 TX</a>
+<span class="lang"><a href="STATEMENT_EN.html">EN ↗</a></span>
+</nav>
+
+<h1>Setup — publishing the public statement repo</h1>
+<p>이 디렉토리(<code>recovery/site/</code>)는 <code>vanjeffing-dotcom/stolen-btc-2024</code> 리포의 콘텐츠입니다. 본 가이드는 리포 생성부터 GitHub Pages 활성화, MIRRORS 업데이트까지의 전체 흐름을 설명합니다.</p>
+<h2>⚠️ 무결성 (절대 깨지지 말 것)</h2>
+<p>다음 4개 파일은 <strong>BIP-322 서명에 SHA-256 으로 봉인됨</strong>. 수정 금지:</p>
+<table>
+<thead>
+<tr>
+<th>파일</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STATEMENT_KO.md</td>
+<td><code>d6c73c8dc51b5e0b6aa076d15a2fc9b4b9d19c3aaac0ba8ba7b3719272c27f93</code></td>
+</tr>
+<tr>
+<td>STATEMENT_EN.md</td>
+<td><code>7948e26829024685245479a94c18bdc5760eccbdd34daf7f1d0ade1e6bdd09e4</code></td>
+</tr>
+<tr>
+<td>EVIDENCE_KO.md</td>
+<td><code>741390f29fdc6a847382e8762f717a7111fb2eb3b5e753af000c56b37c9039a0</code></td>
+</tr>
+<tr>
+<td>EVIDENCE_EN.md</td>
+<td><code>77681db33a7ceb8b33020b1ed913bdba48cec075345bf800ec98e5285c99b5ca</code></td>
+</tr>
+</tbody>
+</table>
+<p>업데이트가 필요한 모든 살아있는 정보(IPFS CID, OP_RETURN TXID, 미러 URL, 신고 접수번호 등)는 <a href="MIRRORS.html"><code>MIRRORS.md</code></a> 에만 기록. 푸시 전 매번 위 4개 해시가 일치하는지 확인.</p>
+<h2>1. GitHub 리포 생성</h2>
+<pre><code class="language-bash"># 빈 private 리포를 vanjeffing-dotcom 계정에 만들기
+gh repo create vanjeffing-dotcom/stolen-btc-2024 --private --description &quot;Public statement of BTC theft 2024-11-05&quot; --confirm
+
+# 또는 웹 UI: https://github.com/new
+#   - Repository name: stolen-btc-2024
+#   - Owner: vanjeffing-dotcom
+#   - Private: ✅
+#   - Initialize: README/license/.gitignore 모두 ☐ (우리가 직접 제공)
+</code></pre>
+<h2>2. 초기 푸시</h2>
+<pre><code class="language-bash">cd /home/jsong/dev/jsong1230-github/20241106/recovery/site
+
+# 봉인 파일 무결성 확인 (해시 4줄이 위 표와 정확히 일치해야 함)
+sha256sum STATEMENT_KO.md STATEMENT_EN.md EVIDENCE_KO.md EVIDENCE_EN.md
+
+git init -b main
+git add .
+git commit -m &quot;Initial public statement (private — Phase 1-7 prep)&quot;
+git remote add origin git@github.com:vanjeffing-dotcom/stolen-btc-2024.git
+git push -u origin main
+</code></pre>
+<h2>3. GitHub Pages 활성화 (Phase 8 — 모든 신고가 자리잡은 후)</h2>
+<p>이 단계는 <strong>즉시 실행하지 마세요</strong>. 리포가 public 으로 전환되고, OP_RETURN 발행 직전에 활성화합니다.</p>
+<pre><code class="language-bash"># 리포 가시성 변경: private → public
+gh repo edit vanjeffing-dotcom/stolen-btc-2024 --visibility public
+
+# Pages 활성화
+gh api repos/vanjeffing-dotcom/stolen-btc-2024/pages \
+    --method POST \
+    -F source.branch=main -F source.path=/
+</code></pre>
+<p>또는 웹 UI: Settings → Pages → Source: Deploy from a branch → main / root → Save.</p>
+<p>활성화 후 1분 이내 라이브: <code>https://vanjeffing-dotcom.github.io/stolen-btc-2024</code></p>
+<h2>4. 서명 메시지 (이미 완료됨)</h2>
+<p><code>signed_message.txt</code> 가 이미 본 디렉토리에 포함되어 있으며, 검증 가능한 BIP-322 서명을 담고 있습니다. 추가 작업 없음.</p>
+<p>검증:</p>
+<pre><code class="language-bash">python3 -c &quot;
+from bitcoinlib.keys import verify_message
+msg = '''&lt;signed_message.txt 의 [1] 블록 그대로&gt;'''
+sig = '&lt;[2] 블록의 base64&gt;'
+print(verify_message(msg, sig, 'bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d'))
+&quot;
+</code></pre>
+<h2>5. IPFS 핀닝 → MIRRORS.md 업데이트</h2>
+<p><a href="../scripts/pin_to_ipfs.html">../scripts/pin_to_ipfs.md</a> 따라 Pinata + web3.storage + (선택)본인 노드 에 핀.</p>
+<p>CID 획득 후:</p>
+<pre><code class="language-bash"># MIRRORS.md 의 IPFS 섹션에 CID 삽입 (자세한 sed 명령은 pin_to_ipfs.md 참조)
+$EDITOR MIRRORS.md
+
+# 봉인 파일 변경 없는지 다시 확인
+sha256sum STATEMENT_KO.md STATEMENT_EN.md EVIDENCE_KO.md EVIDENCE_EN.md
+
+# 푸시
+git add MIRRORS.md
+git commit -m &quot;Add IPFS CID to MIRRORS.md (Pinata)&quot;
+git push
+</code></pre>
+<h2>6. OP_RETURN 마커 발행 → MIRRORS.md 업데이트</h2>
+<p><a href="../scripts/op_return_builder.py">../scripts/op_return_builder.py</a> 로 PSBT 생성 → 서명 → 브로드캐스트.</p>
+<p>마커 TXID 확보 후 MIRRORS.md 의 OP_RETURN 섹션 채우고 푸시.</p>
+<h2>7. 외부 통보</h2>
+<p><code>../reports/</code> 디렉토리의 신고 양식 사용:</p>
+<ul>
+<li>Chainabuse, TRM Labs, Chainalysis</li>
+<li>ECRM (한국 사이버범죄 신고시스템)</li>
+<li>국내 5대 거래소, 글로벌 6사</li>
+<li>블록체인 익스플로러 (Blockchair 코멘트, Twitter 멘션)</li>
+</ul>
+<p>각 통보에는 다음을 인용:<br>
+- 본 사이트 URL (Phase 8 후 public)<br>
+- IPFS CID (Phase 5 후)<br>
+- OP_RETURN 마커 TXID (Phase 6 후)<br>
+- 봉인 4개 파일의 해시 (수사기관·체인 분석 회사용 본인 확인 보조)</p>
+<div class="footer">
+이 페이지는 sealed .md 파일을 시각화한 보조 뷰입니다. 무결성 검증의 절대 기준은 sealed .md 파일 자체와 <a href="signed_message.txt">signed_message.txt</a> 입니다.<br>
+This page is an auxiliary HTML rendering of the sealed .md files. The ground truth for integrity verification is the sealed .md content and <a href="signed_message.txt">signed_message.txt</a>.<br><br>
+CC0 1.0 Public Domain.
+</div>
+</body>
+</html>

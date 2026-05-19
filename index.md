@@ -32,7 +32,10 @@ permalink: /
 
 ## 📡 Mirrors and Live References
 
-- **[MIRRORS.md](MIRRORS.md)** — canonical list of web mirrors, IPFS CIDs, OP_RETURN marker TXIDs, and case numbers. Updated over time as Phase 4/Phase 8 actions complete. Not covered by the signature; integrity preserved via hashes in [signed_message.txt](signed_message.txt).
+- 🇰🇷 **[MIRRORS_KO.md](MIRRORS_KO.md)** — 미러 URL · IPFS CID · OP_RETURN TXID · 신고 접수번호 등 동적 정보 (한국어)
+- 🇺🇸 **[MIRRORS_EN.md](MIRRORS_EN.md)** — same content, English
+
+Not covered by the signature; integrity of the sealed statements is preserved via SHA-256 hashes recorded in [signed_message.txt](signed_message.txt).
 
 ## 🔗 On-chain Verification
 
@@ -61,5 +64,5 @@ You are free — and encouraged — to mirror, archive, and index it.
 
 ---
 
-**Permanent publication channels** — current values maintained in [MIRRORS.md](MIRRORS.md):
+**Permanent publication channels** — current values maintained in [MIRRORS_EN.md](MIRRORS_EN.md) / [MIRRORS_KO.md](MIRRORS_KO.md):
 - GitHub Pages, IPFS CIDs, Bitcoin OP_RETURN marker TXID, additional mirrors.
