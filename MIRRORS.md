@@ -28,39 +28,50 @@
 
 ## 2. IPFS
 
-### 디렉토리 CID (사이트 전체)
+> **CID 가 두 개인 이유**: 같은 콘텐츠라도 IPFS 노드의 chunking·wrap 옵션에 따라 디렉토리 CID 가 달라집니다. 두 CID 모두 동일 콘텐츠를 가리키며, 봉인 파일의 SHA-256 무결성은 어느 쪽에서 fetch 해도 일치함이 검증되었습니다 (Phase 4 작업 시 확인).
+
+### Primary — Pinata 핀
+
+```
+QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp
+```
+
+게이트웨이 접근 (이미 검증):
+- <https://gateway.pinata.cloud/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp>
+- <https://ipfs.io/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp>
+- <https://dweb.link/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp>
+
+특정 파일 접근:
+```bash
+curl https://gateway.pinata.cloud/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp/STATEMENT_KO.md
+curl https://gateway.pinata.cloud/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp/signed_message.txt
+```
+
+### Secondary — 본인 운영 노드 (gram-jsong)
 
 ```
 QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f
 ```
 
-게이트웨이 접근:
-- <https://ipfs.io/ipfs/QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f>
-- <https://cloudflare-ipfs.com/ipfs/QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f>
-- <https://dweb.link/ipfs/QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f>
-- <https://gateway.pinata.cloud/ipfs/QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f>
+이 CID 의 개별 파일 CID (인라인 검증용):
 
-### 개별 파일 CID (인라인 검증용)
-
-| 파일 | CID |
+| 파일 | CID (CIDv0, default chunking) |
 |------|-----|
 | STATEMENT_KO.md | `QmYeRRwXA1eqyi4U2BneVhrtdvZyK2QbzuhBoc5NmW3XVj` |
 | STATEMENT_EN.md | `QmYUkuZKWihxcBVe4KMDZhtXHV1TZQ7W4bjWoQ5xQ5njr3` |
-| EVIDENCE_KO.md | `QmVB2z5yeNHtg3mxD8GXxUhnj2YPQfobxM9ZYSsXLUtbxR` |
-| EVIDENCE_EN.md | `QmTrv7oA725XPGXic3JyvTCzPrviTKRWpkAq2ds5aiaQM1` |
+| EVIDENCE_KO.md  | `QmVB2z5yeNHtg3mxD8GXxUhnj2YPQfobxM9ZYSsXLUtbxR` |
+| EVIDENCE_EN.md  | `QmTrv7oA725XPGXic3JyvTCzPrviTKRWpkAq2ds5aiaQM1` |
 | signed_message.txt | `QmdZq81PXS9GozkLK3cAPjEpEBc7kSxVpCzysLAiqfQ31r` |
-
-콘텐츠는 결정적: 누가 같은 파일을 다시 핀하더라도 위와 동일한 CID 가 나옵니다. CID = "이 콘텐츠가 변조되지 않았다" 의 영구 증명.
 
 ### 핀닝 상태
 
-| 핀닝 노드 | 상태 | 비고 |
-|-----------|------|------|
-| 본인 운영 노드 (gram-jsong, Linux) | ✅ Pinned (Phase 4) | 노드 가용성에 의존 |
-| Pinata | 🔒 미설정 | 사용자 가입 후 진행 예정 (van.jeffing@gmail.com) |
-| web3.storage | 🔒 미설정 | 사용자 가입 후 진행 예정 |
+| 노드 | CID (디렉토리) | 상태 | 비고 |
+|------|---------------|------|------|
+| Pinata (가입자 `van.jeffing@gmail.com`) | `QmV852pj5D…AV2f` | ✅ Pinned 2026-05-19 | Free plan, 1 GB 한도, 본 콘텐츠 ~58 KB |
+| 본인 운영 노드 (gram-jsong, Linux) | `QmXgQfGEvD…AV2f` | ✅ Pinned 2026-05-19 | 노드 가용성에 의존 |
+| web3.storage | — | 🔒 미설정 | 영구성 강화 위해 추가 권장 |
 
-영구성 강화를 위해 최소 2개 이상의 핀닝 서비스에 등록 권장.
+봉인 파일의 SHA-256 무결성은 어느 CID·게이트웨이로 접근하든 항상 [`signed_message.txt`](signed_message.txt) 의 봉인 해시와 일치해야 함. 일치하지 않으면 그 게이트웨이의 콘텐츠는 변조된 것.
 
 ## 3. 비트코인 온체인 (OP_RETURN 마커)
 
