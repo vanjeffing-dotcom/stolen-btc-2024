@@ -1,0 +1,58 @@
+================================================================================
+  SIGNED OWNERSHIP DECLARATION
+  for victim address: bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d
+================================================================================
+
+[1] MESSAGE (to be signed by the private key of bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d)
+--------------------------------------------------------------------------------
+I, the controller of the bitcoin address
+bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d
+declare that the bitcoin transfer with TXID
+e867f6973fa3fc35487ca38bc9fbf0912bde4612d17d6a444d525aaf8dc173d4
+to the address 1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN
+on 2024-11-05 11:07:09 KST
+was unauthorized and constitutes theft.
+
+This declaration commits to the public statement whose
+SHA-256 (STATEMENT_KO.md) = <PASTE_HASH_KO>
+SHA-256 (STATEMENT_EN.md) = <PASTE_HASH_EN>
+
+Public alias: Van Jeffing
+Contact: van.jeffing@gmail.com
+Issued: 2026-05-18
+
+[2] SIGNATURE (base64) — paste the signature produced by the wallet
+--------------------------------------------------------------------------------
+<PASTE_SIGNATURE_HERE>
+
+================================================================================
+  HOW TO PRODUCE THIS SIGNATURE
+================================================================================
+
+Option A. Bitcoin Core (the address must be owned by your loaded wallet):
+  $ bitcoin-cli signmessage "bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d" "<message>"
+
+  Note: Native SegWit (bech32, bc1...) addresses use BIP-322 signing.
+  Bitcoin Core 24+ supports `signmessage` for bech32 addresses via BIP-322.
+
+Option B. Electrum:
+  Tools > Sign / verify message
+  - Address: bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d
+  - Message: (paste section [1] above, between the dashed lines)
+  - Click "Sign", then paste the resulting signature into section [2].
+
+Option C. Sparrow Wallet, Specter, BlueWallet:
+  All support BIP-322 message signing for SegWit addresses.
+
+================================================================================
+  HOW THIRD PARTIES CAN VERIFY
+================================================================================
+
+  $ bitcoin-cli verifymessage \
+      "bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d" \
+      "<signature from section [2]>" \
+      "<message from section [1]>"
+
+  Returns: true   ← signature is valid; address controller authored this.
+
+================================================================================

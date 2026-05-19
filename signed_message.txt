@@ -1,0 +1,115 @@
+================================================================================
+  SIGNED OWNERSHIP DECLARATION
+  for victim address: bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d
+================================================================================
+
+This file contains a cryptographic signature, produced by the private key
+controlling the bitcoin address bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d,
+over the verbatim message in section [1] below.
+
+Any third party can independently verify the signature using Electrum,
+Bitcoin Core, mempool.space's "Verify message" tool, or any wallet that
+supports legacy "Bitcoin Signed Message" verification on bech32 addresses.
+
+The signature, combined with the public ledger record of the theft
+transaction (TXID e867f6973fa3fc35487ca38bc9fbf0912bde4612d17d6a444d525aaf8dc173d4),
+constitutes definitive evidence that the author of the accompanying public
+statement is the rightful owner of the stolen funds.
+
+────────────────────────────────────────────────────────────────────────────────
+[1] MESSAGE (verbatim — verify exactly, no trailing whitespace)
+────────────────────────────────────────────────────────────────────────────────
+I, the controller of the bitcoin address
+bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d
+declare that the bitcoin transfer with TXID
+e867f6973fa3fc35487ca38bc9fbf0912bde4612d17d6a444d525aaf8dc173d4
+to the address 1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN
+on 2024-11-05 11:07:09 KST
+was unauthorized and constitutes theft.
+
+This declaration commits to the public statement whose
+SHA-256 (STATEMENT_KO.md) = d6c73c8dc51b5e0b6aa076d15a2fc9b4b9d19c3aaac0ba8ba7b3719272c27f93
+SHA-256 (STATEMENT_EN.md) = 7948e26829024685245479a94c18bdc5760eccbdd34daf7f1d0ade1e6bdd09e4
+SHA-256 (EVIDENCE_KO.md)  = 741390f29fdc6a847382e8762f717a7111fb2eb3b5e753af000c56b37c9039a0
+SHA-256 (EVIDENCE_EN.md)  = 77681db33a7ceb8b33020b1ed913bdba48cec075345bf800ec98e5285c99b5ca
+
+Public alias: Van Jeffing
+Contact: van.jeffing@gmail.com
+Issued: 2026-05-19
+────────────────────────────────────────────────────────────────────────────────
+[2] SIGNATURE (base64)
+────────────────────────────────────────────────────────────────────────────────
+Hxy3fuYvj9hMaEzMyea56ZUvdlh/7ZOiJCqj3uQFFQG7ZYug+giJGfpU3q+RfelZDw9eI/PlBZmDO+hssQ6Sq0c=
+────────────────────────────────────────────────────────────────────────────────
+[3] METADATA
+────────────────────────────────────────────────────────────────────────────────
+Message SHA-256 (UTF-8, no trailing newline) : 7a4d2ee6db4f6dc536c4c27fbc879c88b03db9fd62ebada3ea0698e67501662f
+Message byte length                          : 814
+Signature scheme                             : ECDSA recoverable, double-SHA256 over Bitcoin Signed Message magic prefix
+                                               (de-facto standard for bech32 P2WPKH; Electrum-compatible).
+                                               Verifiable by: Electrum 4.5+, mempool.space verify tool, python-bitcoinlib,
+                                               bitcoinlib.keys.verify_message, and most chain-analytics platforms.
+Wallet used to sign                          : Electrum 4.x (Native SegWit, BIP-84 derivation)
+Date of signing                              : 2026-05-19
+
+================================================================================
+[4] HOW TO VERIFY
+================================================================================
+
+Option A — Electrum (GUI)
+  1. Open Electrum (any 4.x version).
+  2. Menu: Tools > Sign / verify message > Verify tab.
+  3. Address  : bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d
+     Message  : paste the block between the dashed lines in section [1].
+                Do NOT include the dashed lines themselves; do NOT add a
+                trailing newline.
+     Signature: paste the base64 string from section [2].
+  4. Click Verify. Expected: "Signature verified".
+
+Option B — mempool.space web tool
+  https://mempool.space/tools/verify
+  Paste the same three fields above. Click Verify.
+
+Option C — Bitcoin Core (24.0+)
+  $ bitcoin-cli verifymessage \
+      bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d \
+      'Hxy3fuYvj9hMaEzMyea56ZUvdlh/7ZOiJCqj3uQFFQG7ZYug+giJGfpU3q+RfelZDw9eI/PlBZmDO+hssQ6Sq0c=' \
+      "$(cat <<'EOF'
+I, the controller of the bitcoin address
+bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d
+declare that the bitcoin transfer with TXID
+e867f6973fa3fc35487ca38bc9fbf0912bde4612d17d6a444d525aaf8dc173d4
+to the address 1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN
+on 2024-11-05 11:07:09 KST
+was unauthorized and constitutes theft.
+
+This declaration commits to the public statement whose
+SHA-256 (STATEMENT_KO.md) = d6c73c8dc51b5e0b6aa076d15a2fc9b4b9d19c3aaac0ba8ba7b3719272c27f93
+SHA-256 (STATEMENT_EN.md) = 7948e26829024685245479a94c18bdc5760eccbdd34daf7f1d0ade1e6bdd09e4
+SHA-256 (EVIDENCE_KO.md)  = 741390f29fdc6a847382e8762f717a7111fb2eb3b5e753af000c56b37c9039a0
+SHA-256 (EVIDENCE_EN.md)  = 77681db33a7ceb8b33020b1ed913bdba48cec075345bf800ec98e5285c99b5ca
+
+Public alias: Van Jeffing
+Contact: van.jeffing@gmail.com
+Issued: 2026-05-19
+EOF
+)"
+  Expected output: true
+
+Option D — Python (bitcoinlib)
+  $ pip install bitcoinlib
+  $ python3 -c "
+from bitcoinlib.keys import verify_message
+msg = open('signed_message.txt').read()
+# Extract the section between [1] and [2] (no trailing newline)
+import re
+m = re.search(r'\[1\].*?\n-+\n(.*?)\n-+\n\[2\]', msg, re.DOTALL).group(1)
+sig = 'Hxy3fuYvj9hMaEzMyea56ZUvdlh/7ZOiJCqj3uQFFQG7ZYug+giJGfpU3q+RfelZDw9eI/PlBZmDO+hssQ6Sq0c='
+addr = 'bc1qdxlazvvxhjkflmf8jjv7sfmtx3k0jnp35ug42d'
+print(verify_message(m, sig, addr))
+"
+  Expected output: True
+
+================================================================================
+End of file.
+================================================================================

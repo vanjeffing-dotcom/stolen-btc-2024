@@ -1,0 +1,42 @@
+title: Stolen BTC 2024-11-05
+description: >-
+  Public statement of 6.318566 BTC stolen on 5 November 2024.
+  Attacker address 1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN.
+  Cryptographically signed by the rightful owner.
+author: Van Jeffing
+email: van.jeffing@gmail.com
+url: https://vanjeffing-dotcom.github.io/stolen-btc-2024
+baseurl: "/stolen-btc-2024"
+
+theme: jekyll-theme-minimal
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+show_downloads: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+include:
+  - signed_message_template.txt
+
+exclude:
+  - README.md
+  - SETUP.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# SEO
+twitter:
+  card: summary_large_image
+
+social:
+  name: Van Jeffing
+  links:
+    - https://vanjeffing-dotcom.github.io/stolen-btc-2024
