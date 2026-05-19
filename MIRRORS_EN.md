@@ -31,20 +31,20 @@
 ### Primary — Pinata pin
 
 ```
-QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo
+QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk
 ```
 
 **Browse the directory (HTML-rendering gateways)**:
-- <https://ipfs.io/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/>  ← recommended (Protocol Labs)
-- <https://dweb.link/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/>
-- <https://4everland.io/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/>
+- <https://ipfs.io/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/>  ← recommended (Protocol Labs)
+- <https://dweb.link/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/>
+- <https://4everland.io/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/>
 
 **Fetch individual files (Pinata is fastest)**:
-- <https://gateway.pinata.cloud/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/STATEMENT_KO.md>
-- <https://gateway.pinata.cloud/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/STATEMENT_EN.md>
-- <https://gateway.pinata.cloud/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/EVIDENCE_KO.md>
-- <https://gateway.pinata.cloud/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/EVIDENCE_EN.md>
-- <https://gateway.pinata.cloud/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/signed_message.txt>
+- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/STATEMENT_KO.md>
+- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/STATEMENT_EN.md>
+- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/EVIDENCE_KO.md>
+- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/EVIDENCE_EN.md>
+- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/signed_message.txt>
 
 > Pinata's free public gateway blocks HTML directory-index pages (`ERR_ID:00023`). Use `ipfs.io` or `dweb.link` for directory browsing; any gateway works for individual files.
 
@@ -68,7 +68,7 @@ Individual-file CIDs from this node (handy for inline verification):
 
 | Node | Directory CID | Status | Notes |
 |------|---------------|--------|-------|
-| Pinata (`van.jeffing@gmail.com`) | `QmXt7eqssp…cDvgo` | ✅ Pinned 2026-05-19 | Free plan, 1 GB limit, payload ~58 KB |
+| Pinata (`van.jeffing@gmail.com`) | `QmW8rpbJ8q…Zc7mk` | ✅ Pinned 2026-05-19 | Free plan, 1 GB limit, payload ~58 KB |
 | Self-hosted (gram-jsong, Linux) | `QmXgQfGEvD…KZVAV2f` | ✅ Pinned 2026-05-19 | Depends on node availability |
 | web3.storage | — | 🔒 Not yet configured | Recommended for added durability |
 

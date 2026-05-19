@@ -33,20 +33,20 @@
 ### Primary — Pinata 핀
 
 ```
-QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo
+QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk
 ```
 
 **브라우저 접근 (디렉토리 인덱스 — HTML 렌더링 가능한 게이트웨이)**:
-- <https://ipfs.io/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/>  ← 권장 (Protocol Labs 운영)
-- <https://dweb.link/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/>
-- <https://4everland.io/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/>
+- <https://ipfs.io/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/>  ← 권장 (Protocol Labs 운영)
+- <https://dweb.link/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/>
+- <https://4everland.io/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/>
 
 **개별 파일 직접 링크 (Pinata 가 가장 빠름)**:
-- <https://gateway.pinata.cloud/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/STATEMENT_KO.md>
-- <https://gateway.pinata.cloud/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/STATEMENT_EN.md>
-- <https://gateway.pinata.cloud/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/EVIDENCE_KO.md>
-- <https://gateway.pinata.cloud/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/EVIDENCE_EN.md>
-- <https://gateway.pinata.cloud/ipfs/QmXt7eqsppMq6KMS613F7Yo2JXidPgFrvEYBcfD3qcDvgo/signed_message.txt>
+- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/STATEMENT_KO.md>
+- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/STATEMENT_EN.md>
+- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/EVIDENCE_KO.md>
+- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/EVIDENCE_EN.md>
+- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/signed_message.txt>
 
 > Pinata 의 공용 게이트웨이는 보안상 HTML 디렉토리 인덱스 페이지를 차단합니다 (ERR_ID:00023). 디렉토리 탐색은 `ipfs.io` 또는 `dweb.link` 사용. 개별 파일 fetch 는 모든 게이트웨이 정상.
 
