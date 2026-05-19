@@ -36,16 +36,19 @@
 QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp
 ```
 
-게이트웨이 접근 (이미 검증):
-- <https://gateway.pinata.cloud/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp>
-- <https://ipfs.io/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp>
-- <https://dweb.link/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp>
+**브라우저 접근 (디렉토리 인덱스 — HTML 렌더링 가능한 게이트웨이)**:
+- <https://ipfs.io/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp/>  ← 권장 (Protocol Labs 운영)
+- <https://dweb.link/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp/>
+- <https://4everland.io/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp/>
 
-특정 파일 접근:
-```bash
-curl https://gateway.pinata.cloud/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp/STATEMENT_KO.md
-curl https://gateway.pinata.cloud/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp/signed_message.txt
-```
+**개별 파일 직접 링크 (Pinata 가 가장 빠름)**:
+- <https://gateway.pinata.cloud/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp/STATEMENT_KO.md>
+- <https://gateway.pinata.cloud/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp/STATEMENT_EN.md>
+- <https://gateway.pinata.cloud/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp/EVIDENCE_KO.md>
+- <https://gateway.pinata.cloud/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp/EVIDENCE_EN.md>
+- <https://gateway.pinata.cloud/ipfs/QmV852pj5DKz4ymZK5EWB2msXjEDX87tCxYBVnbCHh7Gdp/signed_message.txt>
+
+> Pinata 의 공용 게이트웨이는 보안상 HTML 디렉토리 인덱스 페이지를 차단합니다 (ERR_ID:00023). 디렉토리 탐색은 `ipfs.io` 또는 `dweb.link` 사용. 개별 파일 fetch 는 모든 게이트웨이 정상.
 
 ### Secondary — 본인 운영 노드 (gram-jsong)
 
