@@ -30,23 +30,28 @@
 
 > **CID 가 두 개인 이유**: 같은 콘텐츠라도 IPFS 노드의 chunking·wrap 옵션에 따라 디렉토리 CID 가 달라집니다. 두 CID 모두 동일 콘텐츠를 가리키며, 봉인 파일의 SHA-256 무결성은 어느 쪽에서 fetch 해도 일치함이 검증되었습니다 (Phase 4 작업 시 확인).
 
-### Primary — Pinata 핀
+### Primary — Pinata 핀 (Phase 8 재핀, 2026-06-02)
 
 ```
-QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk
+QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm
 ```
 
 **브라우저 접근 (디렉토리 인덱스 — HTML 렌더링 가능한 게이트웨이)**:
-- <https://ipfs.io/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/>  ← 권장 (Protocol Labs 운영)
-- <https://dweb.link/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/>
-- <https://4everland.io/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/>
+- <https://ipfs.io/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/>  ← 권장 (Protocol Labs 운영)
+- <https://dweb.link/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/>
+- <https://4everland.io/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/>
 
 **개별 파일 직접 링크 (Pinata 가 가장 빠름)**:
-- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/STATEMENT_KO.md>
-- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/STATEMENT_EN.md>
-- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/EVIDENCE_KO.md>
-- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/EVIDENCE_EN.md>
-- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/signed_message.txt>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/STATEMENT_KO.md>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/STATEMENT_EN.md>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/EVIDENCE_KO.md>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/EVIDENCE_EN.md>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/POLICE_CASE_KO.md>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/POLICE_CASE_EN.md>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/signed_message.txt>
+
+**이전 디렉토리 CID (2026-05-19 핀, MIRRORS·POLICE_CASE 분리 이전)**:
+- `QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk` — 봉인 4파일 (STATEMENT/EVIDENCE) 동일 sha256, 여전히 valid. 거래소·LE에게 발송한 메일에서 참조 중이므로 핀 유지.
 
 > Pinata 의 공용 게이트웨이는 보안상 HTML 디렉토리 인덱스 페이지를 차단합니다 (ERR_ID:00023). 디렉토리 탐색은 `ipfs.io` 또는 `dweb.link` 사용. 개별 파일 fetch 는 모든 게이트웨이 정상.
 
@@ -70,8 +75,9 @@ QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f
 
 | 노드 | CID (디렉토리) | 상태 | 비고 |
 |------|---------------|------|------|
-| Pinata (가입자 `van.jeffing@gmail.com`) | `QmV852pj5D…AV2f` | ✅ Pinned 2026-05-19 | Free plan, 1 GB 한도, 본 콘텐츠 ~58 KB |
-| 본인 운영 노드 (gram-jsong, Linux) | `QmXgQfGEvD…AV2f` | ✅ Pinned 2026-05-19 | 노드 가용성에 의존 |
+| Pinata (가입자 `van.jeffing@gmail.com`) — **Phase 8 재핀** | `QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm` | ✅ Pinned 2026-06-02 | 28 files, ~2.6 MB. MIRRORS·POLICE_CASE 분리본 포함 |
+| Pinata — 이전 핀 (보존) | `QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk` | ✅ Pinned 2026-05-19 | 거래소·LE 발송 메일에서 참조 중. 봉인 4파일 sha256 동일 |
+| 본인 운영 노드 (gram-jsong, Linux) | `QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f` | ✅ Pinned 2026-05-19 | 노드 가용성에 의존 |
 | web3.storage | — | 🔒 미설정 | 영구성 강화 위해 추가 권장 |
 
 봉인 파일의 SHA-256 무결성은 어느 CID·게이트웨이로 접근하든 항상 [`signed_message.txt`](signed_message.txt) 의 봉인 해시와 일치해야 함. 일치하지 않으면 그 게이트웨이의 콘텐츠는 변조된 것.

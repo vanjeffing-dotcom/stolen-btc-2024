@@ -28,23 +28,28 @@
 
 > **Why two CIDs?** Different IPFS nodes use different chunking and wrapping defaults, producing different directory CIDs for byte-identical content. The sealed file SHA-256 hashes are unaffected — they verify regardless of which CID/gateway you use.
 
-### Primary — Pinata pin
+### Primary — Pinata pin (Phase 8 re-pin, 2026-06-02)
 
 ```
-QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk
+QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm
 ```
 
 **Browse the directory (HTML-rendering gateways)**:
-- <https://ipfs.io/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/>  ← recommended (Protocol Labs)
-- <https://dweb.link/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/>
-- <https://4everland.io/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/>
+- <https://ipfs.io/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/>  ← recommended (Protocol Labs)
+- <https://dweb.link/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/>
+- <https://4everland.io/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/>
 
 **Fetch individual files (Pinata is fastest)**:
-- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/STATEMENT_KO.md>
-- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/STATEMENT_EN.md>
-- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/EVIDENCE_KO.md>
-- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/EVIDENCE_EN.md>
-- <https://gateway.pinata.cloud/ipfs/QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk/signed_message.txt>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/STATEMENT_KO.md>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/STATEMENT_EN.md>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/EVIDENCE_KO.md>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/EVIDENCE_EN.md>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/POLICE_CASE_KO.md>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/POLICE_CASE_EN.md>
+- <https://gateway.pinata.cloud/ipfs/QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm/signed_message.txt>
+
+**Previous directory CID (2026-05-19 pin, prior to MIRRORS/POLICE_CASE split)**:
+- `QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk` — sealed 4 files (STATEMENT/EVIDENCE) carry identical sha256, still valid. Kept pinned since outbound notices to exchanges and LE reference it.
 
 > Pinata's free public gateway blocks HTML directory-index pages (`ERR_ID:00023`). Use `ipfs.io` or `dweb.link` for directory browsing; any gateway works for individual files.
 
@@ -68,8 +73,9 @@ Individual-file CIDs from this node (handy for inline verification):
 
 | Node | Directory CID | Status | Notes |
 |------|---------------|--------|-------|
-| Pinata (`van.jeffing@gmail.com`) | `QmW8rpbJ8q…Zc7mk` | ✅ Pinned 2026-05-19 | Free plan, 1 GB limit, payload ~58 KB |
-| Self-hosted (gram-jsong, Linux) | `QmXgQfGEvD…KZVAV2f` | ✅ Pinned 2026-05-19 | Depends on node availability |
+| Pinata (`van.jeffing@gmail.com`) — **Phase 8 re-pin** | `QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm` | ✅ Pinned 2026-06-02 | 28 files, ~2.6 MB. Includes MIRRORS/POLICE_CASE split + redacted police PDF |
+| Pinata — previous pin (retained) | `QmW8rpbJ8qpEp4sRKuk25dFTLBxAcyvGMHCvr4oPzZc7mk` | ✅ Pinned 2026-05-19 | Referenced by outbound exchange/LE notices. Sealed 4 files unchanged sha256 |
+| Self-hosted (gram-jsong, Linux) | `QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f` | ✅ Pinned 2026-05-19 | Depends on node availability |
 | web3.storage | — | 🔒 Not yet configured | Recommended for added durability |
 
 Sealed-file SHA-256 hashes must match the seal in [`signed_message.txt`](signed_message.txt) no matter which CID/gateway is used. If they don't, that gateway's content is tampered with.
