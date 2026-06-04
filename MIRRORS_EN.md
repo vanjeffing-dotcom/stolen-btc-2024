@@ -84,17 +84,17 @@ Sealed-file SHA-256 hashes must match the seal in [`signed_message.txt`](signed_
 
 | Field | Value |
 |------|-------|
-| Marker TXID | `<TBD: filled in after Phase 8 broadcast>` |
-| Block height | `<TBD>` |
-| Payload | `STOLEN-BTC TXID:e867f6973fa3 SEE:vanjeffing-dotcom.github.io/stolen-btc-2024` |
-| Sender address (separate BTC wallet) | `<TBD>` |
+| Marker TXID | `9fb8beb4f4d9f1d8c75c0b4d36d9a296190500c00ef62a8116d91507814f0496` |
+| Block height | `pending (just broadcast, in mempool)` |
+| Payload (actual on-chain) | `STOLEN tx:e867f6973fa3 ipfs:QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm` |
+| Sender address (separate BTC wallet) | `bc1qjpt9vaguhy228txe39jt4vcqmtwnazttzmjmgh` |
 | Recipient (attacker, dust) | `1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN` |
-| Broadcast time | `<TBD>` |
+| Broadcast time | `2026-06-04 (KST)` |
 
-Verification channels (post-broadcast):
-- `https://mempool.space/tx/<marker TXID>`
-- `https://blockchair.com/bitcoin/transaction/<marker TXID>`
-- `https://blockstream.info/tx/<marker TXID>`
+Verification channels:
+- `https://mempool.space/tx/9fb8beb4f4d9f1d8c75c0b4d36d9a296190500c00ef62a8116d91507814f0496`
+- `https://blockchair.com/bitcoin/transaction/9fb8beb4f4d9f1d8c75c0b4d36d9a296190500c00ef62a8116d91507814f0496`
+- `https://blockstream.info/tx/9fb8beb4f4d9f1d8c75c0b4d36d9a296190500c00ef62a8116d91507814f0496`
 
 ## 4. Theft Transaction (fixed, for reference)
 
