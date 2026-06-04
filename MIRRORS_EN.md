@@ -85,7 +85,7 @@ Sealed-file SHA-256 hashes must match the seal in [`signed_message.txt`](signed_
 | Field | Value |
 |------|-------|
 | Marker TXID | `9fb8beb4f4d9f1d8c75c0b4d36d9a296190500c00ef62a8116d91507814f0496` |
-| Block height | `pending (just broadcast, in mempool)` |
+| Block height | `952275 (confirmed 2026-06-04)` |
 | Payload (actual on-chain) | `STOLEN tx:e867f6973fa3 ipfs:QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm` |
 | Sender address (separate BTC wallet) | `bc1qjpt9vaguhy228txe39jt4vcqmtwnazttzmjmgh` |
 | Recipient (attacker, dust) | `1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN` |

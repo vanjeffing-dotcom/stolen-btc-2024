@@ -87,7 +87,7 @@ QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f
 | 항목 | 값 |
 |------|----|
 | 마커 TXID | `9fb8beb4f4d9f1d8c75c0b4d36d9a296190500c00ef62a8116d91507814f0496` |
-| 블록 높이 | `확정 대기 (브로드캐스트 직후, mempool)` |
+| 블록 높이 | `952275 (2026-06-04 확정)` |
 | 페이로드 (실제 온체인) | `STOLEN tx:e867f6973fa3 ipfs:QmfQSneNHBbaytj64bd7Q9kayf6h9HBNnBsrATX1zjBLvm` |
 | 송신 주소 (별도 보유 BTC 지갑) | `bc1qjpt9vaguhy228txe39jt4vcqmtwnazttzmjmgh` |
 | 수신 주소 (가해자, dust) | `1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN` |
