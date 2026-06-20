@@ -312,6 +312,42 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5em 0; }
 </tr>
 </tbody>
 </table>
+<h2>4-A. 가해자 자금 이동 추적 (dormancy 종료, 2026-06-20)</h2>
+<p>절도 후 <strong>592일 무변동</strong>이던 가해자 자금이 전액 신규 주소로 이동함.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>이동 TXID</td>
+<td><code>898de7a9b2e40367905835f1c4a236a4d869c467c97f9939dad6f79445c49da8</code></td>
+</tr>
+<tr>
+<td>일시</td>
+<td>2026-06-20 00:49:04 UTC (09:49:04 KST), 블록 954475</td>
+</tr>
+<tr>
+<td>보낸 주소</td>
+<td><code>1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN</code> (가해자 원주소)</td>
+</tr>
+<tr>
+<td>받은 주소 (신규)</td>
+<td><code>bc1qprhghu2zvgs0emcwryx46ngkntcrtsvpp6jcsw</code></td>
+</tr>
+<tr>
+<td>이동 금액</td>
+<td>6.31855552 BTC (잔액 전액, 단일 홉, 수수료 189 sat)</td>
+</tr>
+<tr>
+<td>대응</td>
+<td>taint_tracker hop-1 추적 중 (180s 간격); 거래소·체인분석사 긴급 follow-up 발송 (2026-06-20)</td>
+</tr>
+</tbody>
+</table>
 <h2>5. 신고 접수 번호 (있는 경우)</h2>
 <table>
 <thead>
@@ -348,6 +384,8 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2.5em 0; }
 <h2>6. 마지막 업데이트</h2>
 <ul>
 <li><strong>2026-05-19</strong>: 초기 생성. 서명 직후 시점.</li>
+<li><strong>2026-06-04</strong>: OP_RETURN 마커 발행 (§3), 블록 952275 확정.</li>
+<li><strong>2026-06-20</strong>: 가해자 자금 592일 만에 신규 주소로 전액 이동 (§4-A). taint_tracker 간격 180s 단축, 거래소·체인분석사 긴급 follow-up 발송.</li>
 <li>(이후 업데이트는 위의 ISO date 와 함께 변경 사항만 한 줄로 추가)</li>
 </ul>
 <hr>

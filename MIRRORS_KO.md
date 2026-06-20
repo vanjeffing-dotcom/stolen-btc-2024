@@ -108,6 +108,19 @@ QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f
 | 가해자 주소 | `1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN` |
 | 이체 금액 | 6.318566 BTC |
 
+## 4-A. 가해자 자금 이동 추적 (dormancy 종료, 2026-06-20)
+
+절도 후 **592일 무변동**이던 가해자 자금이 전액 신규 주소로 이동함.
+
+| 항목 | 값 |
+|------|----|
+| 이동 TXID | `898de7a9b2e40367905835f1c4a236a4d869c467c97f9939dad6f79445c49da8` |
+| 일시 | 2026-06-20 00:49:04 UTC (09:49:04 KST), 블록 954475 |
+| 보낸 주소 | `1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN` (가해자 원주소) |
+| 받은 주소 (신규) | `bc1qprhghu2zvgs0emcwryx46ngkntcrtsvpp6jcsw` |
+| 이동 금액 | 6.31855552 BTC (잔액 전액, 단일 홉, 수수료 189 sat) |
+| 대응 | taint_tracker hop-1 추적 중 (180s 간격); 거래소·체인분석사 긴급 follow-up 발송 (2026-06-20) |
+
 ## 5. 신고 접수 번호 (있는 경우)
 
 | 기관 | 접수번호 | 일자 |
@@ -122,6 +135,8 @@ QmXgQfGEvDBtpCsXYyJ9UkaPkaPwc6uFugcNh6qKZVAV2f
 ## 6. 마지막 업데이트
 
 - **2026-05-19**: 초기 생성. 서명 직후 시점.
+- **2026-06-04**: OP_RETURN 마커 발행 (§3), 블록 952275 확정.
+- **2026-06-20**: 가해자 자금 592일 만에 신규 주소로 전액 이동 (§4-A). taint_tracker 간격 180s 단축, 거래소·체인분석사 긴급 follow-up 발송.
 - (이후 업데이트는 위의 ISO date 와 함께 변경 사항만 한 줄로 추가)
 
 ---

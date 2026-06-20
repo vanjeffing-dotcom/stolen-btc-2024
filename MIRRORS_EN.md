@@ -106,6 +106,19 @@ Verification channels:
 | Attacker address | `1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN` |
 | Amount | 6.318566 BTC |
 
+## 4-A. Attacker Fund Movement (dormancy broken, 2026-06-20)
+
+After **592 days of zero activity**, the attacker moved the entire balance to a new address.
+
+| Field | Value |
+|------|-------|
+| Move TXID | `898de7a9b2e40367905835f1c4a236a4d869c467c97f9939dad6f79445c49da8` |
+| Time | 2026-06-20 00:49:04 UTC (09:49:04 KST), block 954475 |
+| From | `1Jwf2JXHVPz89GJKtnNp6ocBtNC7i5U4XN` (original attacker) |
+| To (new) | `bc1qprhghu2zvgs0emcwryx46ngkntcrtsvpp6jcsw` |
+| Amount | 6.31855552 BTC (entire balance, single hop, 189 sat fee) |
+| Response | tracked at hop-1 by taint_tracker (180s interval); urgent follow-up sent to exchanges + chain-analytics (2026-06-20) |
+
 ## 5. Case Numbers (where available)
 
 | Authority | Case ID | Date |
@@ -120,6 +133,8 @@ For detailed submission tracking, see `reports/submission_log.md` (also not cove
 ## 6. Changelog
 
 - **2026-05-19**: Initial creation, immediately after signing.
+- **2026-06-04**: OP_RETURN marker broadcast (§3), confirmed block 952275.
+- **2026-06-20**: Attacker moved entire balance to a new address after 592 days (§4-A). taint_tracker interval cut to 180s; urgent follow-up sent to exchanges + chain-analytics.
 - (Subsequent updates should appear here in ISO date order, one line per change.)
 
 ---
